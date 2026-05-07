@@ -37,7 +37,7 @@ Once your content is in the repo, use these three phrases with Copilot to build 
 
 # [Microsoft Build 2026](https://build.microsoft.com)
 
-## 🔥 LAB514: From zero to production with Fabric Apps and Copilot CLI
+## 🔥 LAB514: Ship full-stack apps fast with coding agents and a managed backend in Microsoft Fabric
 
 ### Session Description
 

@@ -1,6 +1,6 @@
 # LAB514 — Lab Instructions
 
-From zero to production with Fabric Apps and Copilot CLI.
+From zero to production: ship full-stack apps fast with coding agents and a managed backend in Microsoft Fabric.
 
 > ⚠️ **Draft scaffold** — Each step below is a stub generated from the session outline. Fill in real instructions as the lab content is finalized.
 
