@@ -103,7 +103,7 @@ export class ServicePro {
 Notice the **decorators** (all imported from `@microsoft/rayfin-core`):
 
 - `@entity()` — registers this class as a Rayfin entity (a database table).
-- `@role('authenticated', '*')` — **any signed-in user** can perform **any** action (`'*'` = create, read, update, delete). For real-world data you'd usually narrow this with a `check: (claims, item) => claims.sub.eq(item.user_id)` row-level filter. For this lab the broad rule is fine.
+- `@role('authenticated', '*')` — **any signed-in user** can perform **any** action (`'*'` = create, read, update, delete). For real-world data you'd usually narrow this with a `check: (claims, item) => claims.sub.eq(item.user_id)` row-level filter <!-- TODO: link to the Rayfin permissions guide on Microsoft Learn once it's published -->. For this lab the broad rule is fine.
 - `@uuid()`, `@text({ min, max })`, `@date()` — type-safe column definitions with built-in validation. On MSSQL, always set a `max` on `@text` so DAB can generate an indexable column.
 
 > 🧠 **Why is `user_id` a `@text()` and not a `@uuid()` or a relationship?**
