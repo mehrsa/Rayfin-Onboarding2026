@@ -1,0 +1,9 @@
+apiVersion: v1
+metadata:
+  name: field-services-app
+  displayName: Field Services App
+  description: Field Services application with authentication, data persistence and Rayfin integration.
+entries:
+  - name: field-services-app
+    path: .
+    description: Field Services application with authentication, data persistence and Rayfin integration.
