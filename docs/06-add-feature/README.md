@@ -120,5 +120,5 @@ You've added a real, schema-backed feature locally. Next, push it to production.
 
 ---
 
-Prev ← [5. Deploy to production](../05-deploy/README.md) · Next → [7. Apply migration and redeploy](../07-migrate-and-redeploy/README.md)
+Prev ← [5. Deploy to production](../05-deploy/README.md) · Next → [7. Redeploy and seed test data](../07-redeploy-and-seed/README.md)
 

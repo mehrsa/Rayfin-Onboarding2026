@@ -135,7 +135,7 @@ Two new things to note:
 - `@set(...)` defines an enum-like column constrained to a fixed list of string values. It compiles to a string column with a database `CHECK` constraint, so invalid values are rejected at the database layer.
 - `@one(() => ServicePro, { optional: true })` declares a relationship to another entity. Rayfin auto-generates the foreign key column when you use `@one()` or `@many()`; the explicit `servicePro_id?: string` field above is included here only because the application code wants to read/write that ID directly.
 
-These TypeScript classes are the **single source of truth** for the database schema. When you change them, Rayfin regenerates the database migration for you (you'll see this in [Step 7](../07-migrate-and-redeploy/README.md)).
+These TypeScript classes are the **single source of truth** for the database schema. When you change them, Rayfin regenerates the database migration for you (you'll see this in [Step 6](../06-add-feature/README.md) and [Step 7](../07-redeploy-and-seed/README.md)).
 
 ## 4. (Optional) Peek at the frontend service layer
 

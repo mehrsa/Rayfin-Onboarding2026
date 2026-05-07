@@ -6,8 +6,7 @@
 
 Explore the data in Microsoft Fabric:
 
-- Open the special `/_admin/` page in the deployed URL to generate more data directly from the frontend
-- Upload the semantic model for the app (automate?)
+- Use Power BI desktop app to create a semantic model for the app and connect it to the data source, and then publish it to Fabric from there.
 - Create a data agent using the semantic model and connect the data source
 - Run a query on the data with the semantic model in the agent, e.g.:
 
@@ -17,10 +16,10 @@ Explore the data in Microsoft Fabric:
 
 ## Things to add
 
-- [ ] How to upload the semantic model (manual steps or automation script)
+- [ ] How to create the semantic model using Power BI desktop and publish to Fabric
 - [ ] Step-by-step for creating the data agent in Fabric
 - [ ] Sample notebook + expected outputs
 
 ---
 
-Prev ← [7. Apply migration and redeploy](../07-migrate-and-redeploy/README.md)
+Prev ← [7. Redeploy and seed test data](../07-redeploy-and-seed/README.md)
