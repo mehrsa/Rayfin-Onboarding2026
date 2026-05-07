@@ -19,3 +19,4 @@ Things done, blocking and missing at this point:
 - Links to final Learn / CLI docs for Fabric apps and Rayfin tools (aka.ms)
 - Look up for `TODO:` in the docs (screenshots, things to be tested, final commands, etc.)
 - Instructions to create the semantic model in PowerBI desktop and upload it to Fabric (see with @Christopher Maneu) (step 8)
+- Lab slides
