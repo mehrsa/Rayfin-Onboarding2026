@@ -38,7 +38,7 @@ The lab uses a GitHub Enterprise SSO portal to grant access to GitHub Copilot.
 
 1. Open Visual Studio Code.
 2. Click the **Copilot** icon at the bottom-left of the window and choose **Sign in to use AI Features**.
-    !image[copilot-sign-in.png ](instructions345417/copilot-sign-in.png "Screenshot showing how to sign in GitHub Copilot")
+    ![copilot-sign-in.png](../../img/copilot-sign-in.png "Screenshot showing how to sign in GitHub Copilot")
 3. When prompted to choose a sign-in method, select **Continue with GitHub**.
 4. Complete the browser flow using the SSO session you opened in the previous step.
 5. Confirm the Copilot icon appears in the status bar with no error indicator.
@@ -70,7 +70,7 @@ The GitHub Copilot CLI uses its own sign-in, separate from Visual Studio Code.
    ```
 
    to make sure you're on the latest version.
-8. Once you see the signed-in confirmation in the CLI, type `/exit` (or press `Ctrl+C`) to leave the prompt. You'll come back to the Copilot CLI in [Step 6](../06-add-feature/README.md).
+8. Once you see the signed-in confirmation in the CLI, type `/exit` (or press `Ctrl+C`) to leave the prompt. 
 
 ## 4. Sign in to Microsoft Fabric
 
