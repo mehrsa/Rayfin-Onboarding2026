@@ -1,16 +1,17 @@
-# 3. Explore the template
 
-Before running the app, take a few minutes to look at what `rayfin` scaffolded for you. The Field Services template is a real, working full-stack app: a React + TypeScript frontend, a Rayfin-managed backend, authentication, and a starter data model. Knowing where things live will make the rest of the lab much easier.
+# Explore the template
 
-> 💡 You don't need to fully understand every file — this is a guided tour. Skim, then move on.
+Before running the app, take a few minutes to look at what **rayfin** scaffolded for you. The Field Services template is a real, working full-stack app: a React + TypeScript frontend, a Rayfin-managed backend, authentication, and a starter data model. Knowing where things live will make the rest of the lab much easier.
 
----
+> [!TIP]
+> You don't need to fully understand every file, this is a guided tour. Skim, then move on.
 
 ## 1. Project layout
 
 In Visual Studio Code, expand the project in the Explorer. The folders that matter for this lab:
 
-| Folder / file | What it is |
+| Folder / file | What it is |@lab.Activity(DataModelQuestion)
+
 | --- | --- |
 | `rayfin/rayfin.yml` | Rayfin app configuration — declares which managed services are turned on (auth, data, hosting…) |
 | `rayfin/data/` | Backend data model — one TypeScript file per entity, plus a `schema.ts` that exports them |
@@ -24,7 +25,7 @@ In Visual Studio Code, expand the project in the Explorer. The folders that matt
 
 You can ignore everything else for now (Vite/TypeScript/Tailwind config, generated files, etc.).
 
-## 2. Open `rayfin/rayfin.yml`
+## 2. Open **rayfin/rayfin.yml**
 
 This is the heart of the Rayfin app. It tells the platform which managed services to provision and how they're wired together.
 
@@ -65,11 +66,11 @@ Notice:
 
 You only declare *what* you need; the platform handles *how* to provision and wire it up.
 
-## 3. Look at the data model in `rayfin/data/`
+## 3. Look at the data model in **rayfin/data/**
 
 Open the `rayfin/data/` folder. You'll see three files: a per-entity file for each table, plus a `schema.ts` that aggregates them.
 
-### `schema.ts`
+### **schema.ts**
 
 ```ts
 import { ServicePro } from './ServicePro.js';
@@ -83,9 +84,9 @@ export type FieldServiceSchema = {
 export const schema = [ServicePro, WorkOrder];
 ```
 
-Every entity you want in the database needs to be both imported and added to the `schema` array. This is the file you'll touch in [Step 6](../06-add-feature/README.md) when you add a new entity through the GitHub Copilot CLI.
+Every entity you want in the database needs to be both imported and added to the `schema` array. You'll update this file later when you'll add a new entity through the GitHub Copilot CLI.
 
-### `ServicePro.ts`
+### **ServicePro.ts**
 
 ```ts
 @entity()
@@ -106,10 +107,11 @@ Notice the **decorators** (all imported from `@microsoft/rayfin-core`):
 - `@role('authenticated', '*')` — **any signed-in user** can perform **any** action (`'*'` = create, read, update, delete). For real-world data you'd usually narrow this with a `check: (claims, item) => claims.sub.eq(item.user_id)` row-level filter <!-- TODO: link to the Rayfin permissions guide on Microsoft Learn once it's published -->. For this lab the broad rule is fine.
 - `@uuid()`, `@text({ min, max })`, `@date()` — type-safe column definitions with built-in validation. On MSSQL, always set a `max` on `@text` so DAB can generate an indexable column.
 
-> 🧠 **Why is `user_id` a `@text()` and not a `@uuid()` or a relationship?**
+> [!help]
+> **Why is `user_id` a `@text()` and not a `@uuid()` or a relationship?**
 > `user_id` doesn't reference another Rayfin entity — it stores the JWT `sub` claim from whichever auth provider is active (Rayfin password locally, Microsoft Entra in Fabric). Entra `sub` values are opaque strings, not Rayfin-shaped UUIDs, and the signed-in user isn't exposed as a queryable Rayfin entity. So the convention is: **auth-derived identity fields use `@text()`; foreign keys to other Rayfin entities use `@uuid()`**.
 
-### `WorkOrder.ts`
+### **WorkOrder.ts**
 
 ```ts
 @entity()
@@ -135,7 +137,7 @@ Two new things to note:
 - `@set(...)` defines an enum-like column constrained to a fixed list of string values. It compiles to a string column with a database `CHECK` constraint, so invalid values are rejected at the database layer.
 - `@one(() => ServicePro, { optional: true })` declares a relationship to another entity. Rayfin auto-generates the foreign key column when you use `@one()` or `@many()`; the explicit `servicePro_id?: string` field above is included here only because the application code wants to read/write that ID directly.
 
-These TypeScript classes are the **single source of truth** for the database schema. When you change them, Rayfin regenerates the database migration for you (you'll see this in [Step 6](../06-add-feature/README.md) and [Step 7](../07-redeploy-and-seed/README.md)).
+These TypeScript classes are the **single source of truth** for the database schema. When you change them, Rayfin regenerates the database migration for you (you'll see this in the next pages).
 
 ## 4. (Optional) Peek at the frontend service layer
 
@@ -151,14 +153,14 @@ You don't need to understand the full implementation. Just notice that:
 
 ---
 
-## ✅ You should now be able to answer
+## ✅ Knowledge check
 
-- Where is the data model defined? → `rayfin/data/`
-- Where is the list of managed services configured? → `rayfin/rayfin.yml`
+@lab.Activity(DataModelQuestion)
+
+@lab.Activity(ManagedServicesQuestion)
 
 If any of those don't ring a bell, scroll back up before moving on.
 
 ---
 
-Prev ← [2. Bootstrap app from template](../02-bootstrap/README.md) · Next → [4. Run the app locally](../04-run-locally/README.md)
-
+Continue with **Next →** to run the app locally.
