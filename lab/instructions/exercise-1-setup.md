@@ -92,21 +92,9 @@ A workspace is a container for all the Fabric items related to your project, suc
 
 Navigate back to Visual Studio Code and in the terminal and run the following commands to verify that your environment is set up correctly:
 
-1. To verify that you have the latest version of Node.js installed, run the following command:
-
 ```shell
 node --version
-```
-
-1. To verify that you have the latest version of npm installed, run the following command:
-
-```shell
 npm --version
-```
-
-1. To verify that you have GitHub Copilot CLI installed and running, run the following command:
-
-```shell
 copilot --version
 ```
 
