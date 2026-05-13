@@ -14,31 +14,13 @@ function isLocalBackend(url: string): boolean {
   }
 }
 
-function isLocalFrontend(): boolean {
-  if (import.meta.env.DEV) {
-    return true;
-  }
-
-  if (typeof window === 'undefined') {
-    return false;
-  }
-
-  return (
-    window.location.hostname === 'localhost' ||
-    window.location.hostname === '127.0.0.1'
-  );
-}
-
 export class ServiceContainer {
   private static instance: ServiceContainer | null = null;
 
   public readonly authService: IAuthService;
   public readonly fieldService: IFieldService;
 
-  private constructor(
-    authService: IAuthService,
-    fieldService: IFieldService
-  ) {
+  private constructor(authService: IAuthService, fieldService: IFieldService) {
     this.authService = authService;
     this.fieldService = fieldService;
   }
@@ -47,12 +29,11 @@ export class ServiceContainer {
     if (!ServiceContainer.instance) {
       const apiUrl =
         import.meta.env.VITE_RAYFIN_API_URL || 'http://localhost:5168';
-      const localBackend = isLocalBackend(apiUrl);
-      const localFrontend = isLocalFrontend();
+      const localDev = isLocalBackend(apiUrl);
 
       const publishableKey = import.meta.env.VITE_RAYFIN_PUBLISHABLE_KEY;
 
-      if (!publishableKey && !localBackend) {
+      if (!publishableKey && !localDev) {
         throw new Error(
           'VITE_RAYFIN_PUBLISHABLE_KEY environment variable is required'
         );
@@ -69,7 +50,7 @@ export class ServiceContainer {
 
       let authService: IAuthService;
 
-      if (localFrontend) {
+      if (localDev) {
         authService = new RayfinPasswordAuthService();
       } else {
         const workspaceId = import.meta.env.VITE_FABRIC_WORKSPACE_ID;
