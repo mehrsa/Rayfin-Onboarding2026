@@ -8,13 +8,7 @@ The template handles the setup for you, so you can focus on the lab.
 
 ## Task 1: Bootstrap a new Rayfin project from the Field Services template
 
-1. Open a new folder in Visual Studio Code by selecting **File** > **Open Folder** from the toolbar, then create a new folder in the Home directory that opens, name it `Lab514-workorders-@lab.LabInstance.Id`, and select **Select Folder** to open it.
-
-1. Select **Yes, I trust the authors** in the pop-up that appears asked if you trust the files in this folder.
-
-1. Open a terminal in Visual Studio Code by selecting **View** > **Terminal** from the toolbar.
-
-1. Type/Add the following command into the terminal, but do not press **Enter** yet. Leave `<workspace-uri>` in place for now.
+1. From the open Windows Terminal, type/add the following command, but do not press **Enter** yet. Leave `<workspace-uri>` in place for now.
 
     ```shell
     npm create @microsoft/rayfin@latest -- --project-name field-services-app --template "C:/LabFiles/template/field-services-app" --workspace-uri <workspace-uri>
@@ -40,6 +34,14 @@ The template handles the setup for you, so you can focus on the lab.
 
 In this task, you will inspect the generated project, initialize a Git repository, and make your first commit. This is important for GitHub Copilot CLI in later exercises, as it will show you clean diffs and what it will be changing when you ask it to generate code.
 
+1. Open the `field-services-app` folder in Visual Studio Code by running the following command in the terminal:
+
+    ```shell
+    code field-services-app
+    ```
+
+1. In the pop-up dialog in Visual Studio Code that appears asking if you trust the authors, select **Yes, I trust the authors**.
+
 1. In the Visual Studio Code Explorer, expand the `field-services-app` folder that was created by the bootstrap command.
 
     ![Visual Studio Code Explorer](../media/vscode-explorer.png)
@@ -51,13 +53,9 @@ In this task, you will inspect the generated project, initialize a Git repositor
     - `data/`: Seed data and **the original prompt + dataset used to generate this template** (worth a look if you're curious how it was built)
     - `package.json`: Dependencies and scripts for the project, including `build` and `dev`.
 
-1. In the terminal run the following command to navigate into the new project folder:
+1. Open the terminal in Visual Studio Code by selecting **View > Terminal** from the top menu.
 
-    ```shell
-    cd field-services-app
-    ```
-
-1. Run this command to initialize a new Git repository:
+1. In the Visual Studio Code terminal, run this command to initialize a new Git repository:
 
     ```shell
     git init

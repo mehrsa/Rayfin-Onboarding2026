@@ -22,9 +22,9 @@ You will:
     > [!Tip]
     > If you missed the hosting URL, run `npx rayfin up status` from the `field-services-app` folder to print the current deployment details.
 
-1. Open the hosting URL in a browser tab where you are signed in to Microsoft Fabric.
+1. Open the hosting URL in a new browser tab.
 
-    The app displays the same auth page as your local frontend, including the **Sign in with Microsoft Fabric** button, because both frontends use the same Fabric backend.
+    The app displays the same auth page as your local frontend, including the **Sign in with Microsoft** button, because both frontends use the same Fabric backend.
 
 1. Select **Sign in with Microsoft** just like you did in Exercise 4.
 
@@ -43,7 +43,7 @@ At this point, you have verified that the app is live. Any user with access to y
 
 ## Task 2: Inspect the deployment in Fabric
 
-To see the deployed app item and its associated SQL Database in the Microsoft Fabric portal:
+Let's take a look at the deployed app and database in the Microsoft Fabric portal.
 
 1. Open the Microsoft Fabric portal at `https://app.fabric.microsoft.com`.
 
@@ -60,13 +60,5 @@ To see the deployed app item and its associated SQL Database in the Microsoft Fa
     ![Fabric SQL Database tables](../media/fabric-sql-tables.png)
 
 ---
-
-## ✅ Verify
-
-- The hosting URL printed by `rayfin up` opens the hosted app and shows the **Sign in with Microsoft** button.
-- After signing in, you see the same data you created locally in the previous exercise.
-- You can create new work orders from `/manager/` in the hosted app.
-- The Microsoft Fabric workspace contains a Fabric data app item and its associated SQL Database.
-- The SQL Database contains `ServicePro` and `WorkOrder` tables with the same data as your local tests.
 
 Next → [6. Add a Feature with Copilot CLI](../instructions/exercise-6-new-feature.md)

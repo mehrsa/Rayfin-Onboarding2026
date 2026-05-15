@@ -8,17 +8,11 @@ You will:
 - Start the **frontend dev server** locally
 Then you will sign in, create a Service Pro profile, complete a work order, and test the manager view.
 
-
-
 ## Task 1: Provision the Fabric backend
 
 The `rayfin up` command provisions a managed backend (database, auth, data API) in your Fabric workspace and wires your local frontend to talk to it.
 
-1. Use the terminal from the previous exercise. It should already be in the `field-services-app` folder.
-
-
-
-1. Provision the Fabric backend by running:
+1. Using the Visual Studio Code terminal from the previous exercise, provision the Fabric backend by running:
 
     ```shell
     npx rayfin up
@@ -26,7 +20,7 @@ The `rayfin up` command provisions a managed backend (database, auth, data API) 
 
 1. As this is your first time deploying, the CLI will:
 
-    - Open a browser to sign you in to Microsoft Entra (use the same Microsoft Fabric account you used in Exercise 1).
+    - Open a browser to sign you in to Microsoft Entra. Authentication will be automatic since you already have an active SSO session from Exercise 1.
     - **Create a Fabric App item** in the workspace you wired up at bootstrap.
     - **Provision a managed SQL database** for your data model.
     - **Apply your schema** to that database.
@@ -52,67 +46,56 @@ The frontend is the React app that users interact with.
 
     Because `rayfin up` already wrote the backend URL and publishable key into `.env.local`, Vite picks them up automatically. Your locally-served frontend talks to the freshly provisioned Fabric backend with no extra configuration.
 
-1. Open the local frontend URL shown in the terminal.
-
-    It should look similar to `http://localhost:5173`.
+1. Copy the local frontend URL shown in the terminal, which should look similar to `http://localhost:5173`, and open it in a new browser tab.
 
 1. Confirm that the app sign-in page opens.
 
 ## Task 3: Sign up as a Service Pro
 
-The auth page shows a **"Sign in with Microsoft"** button — the backend authenticates against Microsoft Entra (Fabric SSO).
+The authentication page includes a **"Sign in with Microsoft"** button, and the backend uses Microsoft Entra (Fabric SSO) for sign-in.
 
 1. Select the **Sign in with Microsoft** button. Since you already have an active SSO session from Exercise 1, you should be signed in automatically without needing to enter credentials again.
 
-1. After successful sign-in, a Microsoft Fabric dialog will pop up asking you to allow the app to access your profile information. Select **Accept** to continue.
+1. After successful sign-in, a Microsoft Fabric dialog will pop up asking you to allow the app to use your Microsoft Fabric credentials. Select **Accept** to continue.
 
-1. After sign-in, create your Service Pro profile.
+1. After successful authentication, you should land in the Service Pro First Access view where you can create your profile.
 
-1. Enter your name.
+1. Create your Service Pro profile by entering your name and relevant skills.
 
-1. Enter a few skills, such as:
+1. For the skills, enter a few relevant skills such as:
 
     ```text
     painting, hanging, drilling
     ```
 
-1. Save the profile.
+1. Complete the profile creation by selecting **Create Profile**.
 
-1. In the **Jobs** view, find an available work order.
+1. After your profile is created, you should see the **Jobs** view with the seeded work order for you to test with.
 
-1. Accept the work order.
+1. Accept the work order by selecting the **Accept job** button on the work order card.
 
-1. Mark the work order complete.
+1. Mark the work order complete by selecting the **Mark done** button on the work order card.
 
 ## Task 4: Explore the manager view
 
 The same app also includes a manager view.
 
-1. In the browser, go to the manager URL:
+1. Open a new browser tab and navigate to the manager URL:
 
     ```text
     http://localhost:5173/manager/
     ```
 
-1. Review the manager view.
-
-1. Create a new work order.
+1. Review the manager view and create a new work order by completing the form and selecting **Create order**.
 
 1. Assign the work order to your Service Pro profile.
 
-1. Select **Jobs** in the navigation bar.
+1. Select **Jobs** in the top navigation bar.
 
 1. Confirm that the assigned work order appears for the Service Pro.
 
-## Verify Your Setup
+1. Back in the Visual Studio Code terminal, stop the Vite dev server by pressing **Ctrl+C**.
 
-Before moving on, confirm that everything is working:
-
-- `rayfin up` finished without errors and printed a hosting URL and publishable key.
-- The frontend opens at `http://localhost:5173` and shows the **Sign in with Microsoft Fabric** button.
-- You can sign up, create a Service Pro profile, accept the seeded work order, and create new ones from `/manager/`.
-
-Leave the frontend dev server running for the next exercise.
+---
 
 Next → [5. Deploy to Microsoft Fabric](../instructions/exercise-5-deploy-to-production.md)
-

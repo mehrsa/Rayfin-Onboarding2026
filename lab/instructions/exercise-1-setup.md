@@ -22,27 +22,9 @@ In this exercise, you will sign in to GitHub through Contoso DIY's enterprise SS
 
 1. After a successful sign-in, you will be redirected to the GitHub homepage. **Keep this browser tab open** as you will need this active session for the next steps.
 
-## Task 2: Sign in to GitHub Copilot in Visual Studio Code
+## Task 2: Sign in to GitHub Copilot in the terminal
 
-1. In the virtual machine, from the taskbar, open **Visual Studio Code**.
-
-1. Select the **Copilot** icon at the bottom-left of the Visual Studio Code window and select **Sign in to use AI Features**.
-
-    ![Sign in to Copilot](../media/sign-in-copilot.png)
-
-1. Select **Continue with GitHub** in the dialog to choose a sign-in method.
-
-1. A new browser window will open prompting you to sign in to GitHub. Authorize Visual Studio Code to access the GitHub account by selecting **Continue**.
-
-1. In the next page that asks for permissions, select **Authorize Visual Studio Code** and you should see a dialog redirecting you back to Visual Studio Code. Select **Open** to return to Visual Studio Code.
-
-1. Confirm that the Copilot icon in the status bar no longer shows **Signed out**.
-
-## Task 3: Sign in to GitHub Copilot CLI
-
-The GitHub Copilot CLI uses its own authentication separate from Visual Studio Code, so you need to sign in to the CLI as well.
-
-1. In Visual Studio Code, open a new terminal by selecting **View** > **Terminal** from the toolbar.
+1. In the virtual machine, from the taskbar, select **Windows Terminal** to open a new terminal window.
 
 1. In the terminal, start the Copilot CLI by running: `copilot`.
 
@@ -90,7 +72,7 @@ A workspace is a container for all the Fabric items related to your project, suc
 
 ## Verify Your Setup
 
-Navigate back to Visual Studio Code and in the terminal and run the following commands to verify that your environment is set up correctly:
+Navigate back to the Windows Terminal and run the following commands to verify that your environment is set up correctly:
 
 ```shell
 node --version
