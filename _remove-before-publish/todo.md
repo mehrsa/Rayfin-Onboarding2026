@@ -5,15 +5,21 @@
 - [x] remove skills install
 - [x] no need for new folder/vscode in step 2
 - [x] publish lab
-- [ ] lab slides
-- [ ] src of final source code in /src + readme
-- [ ] step 8 instructions test
-- [ ] test lab e2e + timing
-- [ ] clean up TODO:
+- [x] src of final source code in /src + readme
+- [x] lab slides
+- [x] step 8 instructions test
+- [x] test lab e2e + timing
+- [x] powerbi -> fabric in portal
+- [x] reconcile lab instructions from skillable w/ repo
+- [x] update lab instructions in repo, prepare for publish
+- [x] clean up TODO:
 - [ ] add aka.ms docs links
 
-- [ ] powerbi -> fabric in portal
 
+Updates
+- Added source code of the final lab code in /src folder
+- Lab slides (heavily inspired and reusing some content from my pre-recorded session)
+- 
 
 
 ## Done
@@ -32,6 +38,7 @@
 - adding the new feature with copilot took ~5min instead of ~1.5min locally, probably because of the slow VM issue
 - tested workshop up to step 7 working fine, fixed a few things along the way
 - I'll commit an update to the template with an auth fix to support the remote backend
+- Review instructions to create the semantic model in PowerBI desktop and upload it to Fabric (see with @Christopher Maneu) (step 8)
 
 ## /!\ Blocking
 
@@ -42,5 +49,3 @@
 
 - Links to final Learn / CLI docs for Fabric apps and Rayfin tools (aka.ms)
 - Look up for `TODO:` in the docs (screenshots, things to be tested, final commands, etc.)
-- Review instructions to create the semantic model in PowerBI desktop and upload it to Fabric (see with @Christopher Maneu) (step 8)
-- Lab slides
