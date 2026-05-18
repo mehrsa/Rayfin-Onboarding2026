@@ -10,9 +10,11 @@ Then you will sign in, create a Service Pro profile, complete a work order, and 
 
 ## Task 1: Provision the Fabric backend
 
-The `rayfin up` command provisions a managed backend (database, auth, data API) in your Fabric workspace and wires your local frontend to talk to it.
+The **rayfin up** command provisions a managed backend (database, auth, data API) in your Fabric workspace and wires your local frontend to talk to it.
 
-1. Using the Visual Studio Code terminal from the previous exercise, provision the Fabric backend by running:
+1. Use the VS Code terminal from the previous exercise. It should already be in the **field-services-app** folder.
+
+1. Provision the Fabric backend by running:
 
     ```shell
     npx rayfin up
@@ -25,14 +27,14 @@ The `rayfin up` command provisions a managed backend (database, auth, data API) 
     - **Provision a managed SQL database** for your data model.
     - **Apply your schema** to that database.
     - **Generate a publishable key** for the new backend.
-    - **Wire your frontend** to the new backend by writing the connection details and key into `.env.local` and `rayfin/.env`.
+    - **Wire your frontend** to the new backend by writing the connection details and key into *.env.local* and *rayfin/.env*.
 
 1. Watch the terminal for progress on each step. The first run takes a couple of minutes.
 
 1. When the command finishes, the CLI prints the deployment details, including the backend URL.
 
-> [!Tip]
-> The CLI saves the deployment details to `rayfin/.deployments.json` so subsequent `rayfin up` runs update the same deployment instead of creating a new one.
+> [!TIP]
+> The CLI saves the deployment details to **rayfin/.deployments.json** so subsequent **rayfin up** runs update the same deployment instead of creating a new one.
 
 ## Task 2: Start the frontend
 
@@ -44,9 +46,9 @@ The frontend is the React app that users interact with.
     npm run dev
     ```
 
-    Because `rayfin up` already wrote the backend URL and publishable key into `.env.local`, Vite picks them up automatically. Your locally-served frontend talks to the freshly provisioned Fabric backend with no extra configuration.
+    Because **rayfin up** already wrote the backend URL and publishable key into **.env.local**, Vite picks them up automatically. Your locally-served frontend talks to the freshly provisioned Fabric backend with no extra configuration.
 
-1. Copy the local frontend URL shown in the terminal, which should look similar to `http://localhost:5173`, and open it in a new browser tab.
+1. Copy the local frontend URL shown in the terminal, which should be similar to `http://localhost:5173`, and open it in a new browser tab.
 
 1. Confirm that the app sign-in page opens.
 

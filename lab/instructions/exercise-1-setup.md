@@ -42,7 +42,7 @@ In this exercise, you will sign in to GitHub through Contoso DIY's enterprise SS
 
 1. Exit the Copilot CLI by running: `/exit`. You will start it again in the next exercise when you use it to generate code.
 
-## Task 4: Sign in to Microsoft Fabric
+## Task 3: Sign in to Microsoft Fabric
 
 1. In a new tab on the browser, navigate to the Microsoft Fabric portal at: `https://app.fabric.microsoft.com`.
 
@@ -59,7 +59,7 @@ In this exercise, you will sign in to GitHub through Contoso DIY's enterprise SS
     > [!Important]
     > If the page title and icon in the bottom left corner of the page say "Power BI", you need to switch to the Fabric portal. Click on the **Power BI** icon in the bottom left corner, then select **Fabric** to switch to the Microsoft Fabric portal.
 
-## Task 5: Create a Workspace in Fabric
+## Task 4: Create a Workspace in Fabric
 
 This lab deploys your work-order app to a Microsoft Fabric workspace.
 

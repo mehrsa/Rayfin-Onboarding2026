@@ -1,4 +1,4 @@
-# 🎉 You're done
+# You're done 🎉
 
 In one lab session you just:
 
