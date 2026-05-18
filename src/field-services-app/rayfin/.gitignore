@@ -1,0 +1,4 @@
+# Rayfin — auto-generated or secret-bearing files
+.env
+.deployments.json
+.temp/

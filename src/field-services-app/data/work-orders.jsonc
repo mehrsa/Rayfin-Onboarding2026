@@ -1,0 +1,56 @@
+{
+  // Available Service Pros who can be assigned to work orders.
+  "servicePros": [
+    {
+      "id": "tech-1",
+      "name": "Alex Martin",
+      "skills": ["hanging", "drilling"] // Used to match a Service Pro to a job.
+    },
+    {
+      "id": "tech-2",
+      "name": "Sam Chen",
+      "skills": ["hanging", "framing", "painting"]
+    }
+  ],
+
+  // Jobs requested by customers after they picked a painting.
+  // status values:
+  //   "pending"        - created, no Service Pro assigned yet
+  //   "assigned"       - Service Pro assigned, work not started
+  //   "in_progress"    - Service Pro on site / working
+  //   "completed"      - work done
+  //   "needs_followup" - another intervention must be scheduled (see note)
+  //   "cancelled"      - order cancelled
+  "workOrders": [
+    {
+      "id": "wo-1001",
+      "customer": "Jane Doe",
+      "address": "12 Rue de Rivoli, Paris",
+      "task": "Hang large painting in living room",
+      "scheduledAt": "2026-05-03T10:00:00Z", // ISO 8601, UTC
+      "status": "assigned",
+      "serviceProId": "tech-1", // null when unassigned
+      "note": "" // Free-form notes, e.g. why a follow-up is needed.
+    },
+    {
+      "id": "wo-1002",
+      "customer": "John Smith",
+      "address": "45 Avenue Victor Hugo, Lyon",
+      "task": "Install gallery wall (3 frames)",
+      "scheduledAt": "2026-05-04T14:00:00Z",
+      "status": "pending",
+      "serviceProId": null,
+      "note": ""
+    },
+    {
+      "id": "wo-1003",
+      "customer": "Marie Dubois",
+      "address": "8 Quai des Belges, Marseille",
+      "task": "Mount oversized canvas above fireplace",
+      "scheduledAt": "2026-05-02T09:30:00Z",
+      "status": "needs_followup",
+      "serviceProId": "tech-2",
+      "note": "Wall is hollow plasterboard, needs heavy-duty anchors. Reschedule with proper hardware."
+    }
+  ]
+}
