@@ -22,7 +22,7 @@ The template handles the setup for you, so you can focus on the lab.
 
 1. Return to the terminal. In the command you pasted, replace `<workspace-uri>` with the Fabric workspace URL you just copied, then press **Enter** to bootstrap a new Rayfin project from the Field Services template.
 
-    The CLI will then:
+The CLI will then:
     - Create a new folder called **field-services-app** in your current directory.
     - Copy the template files into a new **field-services-app** folder.
     - Wire the project to your Fabric workspace using the `--workspace-uri` you provided.
@@ -44,7 +44,7 @@ In this task, you will inspect the generated project, initialize a Git repositor
 
 1. In the Visual Studio Code Explorer, expand the **field-services-app** folder that was created by the bootstrap command.
 
-    ![Visual Studio Code Explorer](../media/vscode-explorer.png)
+    ![Visual Studio Code Explorer](../img/vscode-explorer.png)
 
 1. Review the project structure. It should look something like this:
 

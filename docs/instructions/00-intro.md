@@ -1,22 +1,22 @@
-# Build a Fullstack App with Microsoft Fabric
+@lab.Title
 
-## Get Started
+# Get Started
 
 > [!TIP]
-> As you follow the instructions in this pane, whenever you see a `icon`, you can use it to copy text from the instruction pane into the virtual machine interface.
+> As you follow the instructions in this pane, whenever you see a +++icon+++, you can use it to copy text from the instruction pane into the virtual machine interface.
 
 ## Sign into Windows
 
 In the virtual machine, sign into Windows using the following credentials:
 
-- Username: `@lab.VirtualMachine(Win11-Pro-Base).Username`
-- Password: `@lab.VirtualMachine(Win11-Pro-Base).Password`
+- Username: +++@lab.VirtualMachine(Win11-Pro-Base).Username+++
+- Password: +++@lab.VirtualMachine(Win11-Pro-Base).Password+++
 
 ## Lab Overview
 
 This lab demonstrates how to go from zero to production with a full-stack enterprise app using Fabric Apps, the Rayfin SDK, and GitHub Copilot CLI. It shows how a managed backend in Microsoft Fabric can provide database, authentication, hosting, schema management, and deployment so builders can focus on product features instead of infrastructure plumbing.
 
-The scenario centers on Contoso DIY, a home-improvement retailer expanding into home services. After customers choose products for projects like painting, hanging, or repairs, Contoso wants to connect them with qualified service pros who can complete the work in the field.To support this new business line, Contoso needs a work-order management app that allows:
+The scenario centers on Contoso DIY, a home-improvement retailer expanding into home services. After customers choose products for projects like painting, hanging, or repairs, Contoso wants to connect them with qualified service pros who can complete the work in the field. To support this new business line, Contoso needs a work-order management app that allows:
 
 - Managers to create work orders
 - Managers to assign jobs to service pros
@@ -34,9 +34,3 @@ Through the exercises, you'll explore how Contoso DIY:
 You'll walk in the Contoso DIY team's shoes to build, ship, evolve, and analyze a real enterprise app. The exercises are designed to be completed in order because each step builds on the app, data model, deployment, and resources created in the previous exercises, so make sure you complete each exercise before moving on to the next one.
 
 Select **Next →** to start the lab.
-
-===
-
-!  !INSTRUCTIONS
-
-===
