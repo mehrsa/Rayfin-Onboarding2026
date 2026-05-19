@@ -106,18 +106,18 @@ Use these as a starting point — or write your own!
 
 ### 💻 Technologies Used
 
-1. [Fabric Apps](https://learn.microsoft.com/fabric/)
+1. [Rayfin](aka.ms/rayfin)
 1. [GitHub Copilot CLI](https://docs.github.com/copilot/how-tos/use-copilot-agents/use-copilot-in-the-cli)
 1. [Microsoft Fabric](https://learn.microsoft.com/fabric/) — semantic models and data agents
 1. [Visual Studio Code](https://code.visualstudio.com/docs)
 1. [TypeScript](https://learn.microsoft.com/training/paths/build-javascript-applications-typescript/)
-1. [Docker](https://learn.microsoft.com/training/paths/intro-to-docker/)
 
 ### 📚 Resources and Next Steps
 
 | Resource | Description |
 |:---------|:------------|
 | [https://aka.ms/build26-next-steps](https://aka.ms/build26-next-steps) | Take the next step in your learning journey after Build 2026 |
+| [Rayfin documentation](aka.ms/rayfin/docs) | Learn about Rayfin CLI and SDK capabilities |
 | [Microsoft Fabric documentation](https://learn.microsoft.com/fabric/) | Learn about Fabric capabilities including data, AI, and apps |
 | [GitHub Copilot CLI documentation](https://docs.github.com/copilot/how-tos/use-copilot-agents/use-copilot-in-the-cli) | Use Copilot as an agent in your terminal to read, edit, and ship code |
 | [Build a data agent in Microsoft Fabric](https://learn.microsoft.com/fabric/data-science/concept-data-agent) | Step-by-step guide to creating a Fabric data agent on top of a semantic model |
