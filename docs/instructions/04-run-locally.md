@@ -12,7 +12,7 @@ Then you will sign in, create a Service Pro profile, complete a work order, and 
 
 The **rayfin up** command provisions a managed backend (database, auth, data API) in your Fabric workspace and wires your local frontend to talk to it.
 
-1. Use the VS Code terminal from the previous exercise. It should already be in the **field-services-app** folder.
+1. Use the Visual Studio Code terminal from the previous exercise. It should already be in the **field-services-app** folder.
 
 1. Provision the Fabric backend by running:
 
