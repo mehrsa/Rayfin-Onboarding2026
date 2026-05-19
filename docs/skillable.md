@@ -824,7 +824,7 @@ A semantic model gives the data agent a clean, well-described view of your data 
 
 1. Close the Agent Instructions editor.
 
-## Task 5: Query the agent with natural-language questions
+## Task 3: Query the agent with natural-language questions
 
 Use the agent's chat interface to ask questions about your seeded production data.
 
