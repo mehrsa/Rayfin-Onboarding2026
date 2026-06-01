@@ -302,8 +302,8 @@ You do not need to understand the full frontend in this exercise.
 
 1. If you have time, look at these files:
 
-    - **services/ServiceContainer.ts** — singleton that bootstraps the Rayfin client and auto-selects the right auth provider (password locally, Fabric Entra in production).
-    - **services/rayfin/RayfinFieldService.ts** — CRUD operations for *ServicePro* and *WorkOrder* using the typed Rayfin data API.
+    - **services/ServiceContainer.ts**: singleton that bootstraps the Rayfin client and auto-selects the right auth provider (password locally, Fabric Entra in production).
+    - **services/rayfin/RayfinFieldService.ts**: CRUD operations for *ServicePro* and *WorkOrder* using the typed Rayfin data API.
 
 1. Keep these ideas in mind:
 
@@ -339,7 +339,7 @@ Then you will sign in, create a Service Pro profile, complete a work order, and 
 
 The **rayfin up** command provisions a managed backend (database, auth, data API) in your Fabric workspace and wires your local frontend to talk to it.
 
-1. Use the Visual Studio Code terminal from the previous exercise. It should already be in the **field-services-app** folder.
+1. Use the VS Code terminal from the previous exercise. It should already be in the **field-services-app** folder.
 
 1. Provision the Fabric backend by running:
 
@@ -695,6 +695,10 @@ The template includes an authenticated admin page at `/_admin/` that can generat
 
 1. Wait for the operation to complete.
 
+	> [!Important]
+    > If you the data seeding process gives you an error (time out or fetch), you can still continue with the next tasks.
+    > !IMAGE[Requesterror.png](instructions345417/Requesterror.png)
+
 1. Confirm that the completion message reports the number of generated service pros and work orders.
 
     > [!Tip]
@@ -764,6 +768,9 @@ A semantic model gives the data agent a clean, well-described view of your data 
 1. Provide a name for the semantic model, in this case, `FieldServices`.
 
 1. Select the **ServicePros**, **WorkOrders**, and **WorkOrderComments** tables to include in the model and select **Confirm** to create the model.
+
+	> [!Tip]
+    > If you don't see the **WordOrderComments** table when creating a semantic model please wait a few minutes, refresh your page and create the semantic model again.
 
     !IMAGE[fabric-select-tables-semantic-model.png](instructions345417/fabric-select-tables-semantic-model.png)
 

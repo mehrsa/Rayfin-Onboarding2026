@@ -31,6 +31,9 @@ A semantic model gives the data agent a clean, well-described view of your data 
 
 1. Select the **ServicePros**, **WorkOrders**, and **WorkOrderComments** tables to include in the model and select **Confirm** to create the model.
 
+	> [!Tip]
+    > If you don't see the **WordOrderComments** table when creating a semantic model please wait a few minutes, refresh your page and create the semantic model again.
+
     ![Select tables for semantic model](../../img/fabric-select-tables-semantic-model.png)
 
     > [!Note]

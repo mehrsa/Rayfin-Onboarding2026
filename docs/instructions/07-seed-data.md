@@ -22,6 +22,10 @@ The template includes an authenticated admin page at `/_admin/` that can generat
 
 1. Wait for the operation to complete.
 
+    > [!Important]
+    > If you the data seeding process gives you an error (time out or fetch), you can still continue with the next tasks.
+    > ![Request error](../../img/request-error.png)
+
 1. Confirm that the completion message reports the number of generated service pros and work orders.
 
     > [!Tip]

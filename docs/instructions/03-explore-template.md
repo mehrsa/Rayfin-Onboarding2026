@@ -93,8 +93,8 @@ You do not need to understand the full frontend in this exercise.
 
 1. If you have time, look at these files:
 
-    - **services/ServiceContainer.ts** — singleton that bootstraps the Rayfin client and auto-selects the right auth provider (password locally, Fabric Entra in production).
-    - **services/rayfin/RayfinFieldService.ts** — CRUD operations for *ServicePro* and *WorkOrder* using the typed Rayfin data API.
+    - **services/ServiceContainer.ts**: singleton that bootstraps the Rayfin client and auto-selects the right auth provider (password locally, Fabric Entra in production).
+    - **services/rayfin/RayfinFieldService.ts**: CRUD operations for *ServicePro* and *WorkOrder* using the typed Rayfin data API.
 
 1. Keep these ideas in mind:
 

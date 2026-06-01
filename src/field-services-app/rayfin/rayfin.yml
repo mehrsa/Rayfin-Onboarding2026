@@ -14,6 +14,8 @@ services:
     allowedRedirectUris:
       - http://localhost:5173
       - http://localhost:5173/auth/callback
+      - https://snowy-brook-e75656d8f2-centraluseuap.webapp.dxt.fabricapps.net
+      - https://legal-cliff-5b537d447e-centraluseuap.webapp.dxt.fabricapps.net
     fabric:
       enabled: true
   data:
