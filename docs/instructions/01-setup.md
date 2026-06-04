@@ -20,6 +20,12 @@ Ensure you have below:
 | GitHub CLI| Windows: ```winget install --id GitHub.cli -e``` , macOS: ```brew install gh```|
 
 
+## Clone this repo
+
+Run below command in a terminal window (folder of your choice):
+
+```git clone https://github.com/mehrsa/Rayfin-Onboarding2026.git```
+
 
 
 ## Test out GitHub Copilot in the terminal

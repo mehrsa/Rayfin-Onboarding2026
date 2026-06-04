@@ -2,33 +2,35 @@
 
 In this exercise, you'll create a new Rayfin project from the **Field Services** template.
 
+First, open the folder in VS code (do not go inside the repo folder when choosing it to open.)
+
 The template handles the setup for you, so you can focus on the lab.
 > [!TIP]
-> In this lab environment, the template is available locally at **C:\LabFiles\template\field-services-app**. The **rayfin** CLI knows how to find it by name.
+> On the left bar, you can now see all folders and files. The template is available locally inside  **.\template\field-services-app**. The **rayfin** CLI knows how to find it by name.
 
 ## Task 1: Bootstrap a new Rayfin project from the Field Services template
 
-1. From the open Windows Terminal, type/add the following command, but **do not press *Enter* yet**. Leave `<workspace-uri>` in place for now.
+1. From the open Windows Terminal, type/add the following command, but **do not press *Enter* yet**. Leave `<workspace-id>` in place for now.
 
     ```shell
-    npm create -y @microsoft/rayfin@latest -- --project-name field-services-app --template "C:/LabFiles/template/field-services-app" --workspace-uri <workspace-uri>
+    npm create -y @microsoft/rayfin@latest -- --project-name field-services-app --template "./template/field-services-app" --workspace-id <workspace-id>
     ```
 
 1. Navigate back to your browser where you have the Microsoft Fabric portal open.
 
-1. In the left-hand navigation pane, select **Workspaces** and then select the `Lab514-workorders-@lab.LabInstance.Id` workspace you created in Task 5 of the previous exercise.
+2. In the left-hand navigation pane, select **Workspaces** and then select the workspace you just created in the previous exercise.
 
-1. Once the workspace loads, copy the URL from the browser address bar. Remove anything after the workspace ID. The URL should look like `https://app.fabric.microsoft.com/groups/<workspace-id>`.
+3. Once the workspace loads, copy the workspace ID from the URL in address bar. Workspace ID is the long string of characters (can't miss it!).
 
-1. Return to the terminal. In the command you pasted, replace `<workspace-uri>` with the Fabric workspace URL you just copied, then press **Enter** to bootstrap a new Rayfin project from the Field Services template.
+4. Return to the terminal. In the command you pasted, replace `<workspace-id>` with the id you just copied, then press **Enter** to bootstrap a new Rayfin project from the Field Services template.
 
 The CLI will then:
     - Create a new folder called **field-services-app** in your current directory.
     - Copy the template files into a new **field-services-app** folder.
-    - Wire the project to your Fabric workspace using the `--workspace-uri` you provided.
+    - Wire the project to your Fabric workspace using the `--workspace-id` you provided.
     - Run `npm install` in the new project folder to pull dependencies (this can take a couple of minutes on first run).
 
-1. While the install is running, open the `data` folder at **C:\LabFiles\template\field-services-app** to see the original prompt and dataset used to generate this template. This will give you a better understanding of how the app was built and ideas on how to customize it later in the lab.
+1. While the install is running, you can open the `data` folder at **.\template\field-services-app** to see the original prompt and dataset used to generate this template. This will give you a better understanding of how the app was built and ideas on how to customize it later in the lab.
 
 ## Task 2: Explore the generated project and make your first commit
 
