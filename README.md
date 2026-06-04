@@ -1,21 +1,4 @@
-<p align="center">
-<img src="img/banner-build-26.png" alt="Microsoft Build 2026" width="1200"/>
-</p>
 
-# [Microsoft Build 2026](https://build.microsoft.com)
-
-## 🔥 LAB514: Ship full-stack apps fast with coding agents and a managed backend in Microsoft Fabric
-
-### Session Description
-
-Skip the infra plumbing and ship a real enterprise app. In this hands-on lab, build a work-order management app for Contoso DIY's new home services with Fabric Apps—a managed backend giving you database, auth, hosting, functions, storage, and real-time out of the box. Start from a template, deploy to production in one command, then add features through the Copilot CLI without worrying about migrations. Finish by tapping Fabric intelligence to turn app data into insights.
-
-### 🏫 Getting started in a guided session
-
-To get started in a guided lab session:
-- Open the lab environment provided to you
-- Sign in to GitHub and to Microsoft Fabric using the credentials shared by the proctor
-- Open the [`/docs/`](./docs/README.md) folder and start with [Step 1: Setup Your Environment](./docs/instructions/01-setup.md)
 
 ### 🏠 Getting started in your own environment
 
@@ -90,46 +73,3 @@ Use these as a starting point — or write your own!
 | [Build a data agent in Microsoft Fabric](https://learn.microsoft.com/fabric/data-science/concept-data-agent) | Step-by-step guide to creating a Fabric data agent on top of a semantic model |
 | [Microsoft Learn MCP Server](https://github.com/MicrosoftDocs/MCP) | Connect agents to live Microsoft official documentation |
 
-
-### 🌟 Microsoft Learn MCP Server
-
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Docs_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft.docs.mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D)
-
-The Microsoft Learn MCP Server is a remote MCP Server that enables clients like GitHub Copilot and other AI agents to bring trusted and up-to-date information directly from Microsoft's official documentation. Get started by using the one-click button above for VSCode or access the [mcp.json](.vscode/mcp.json) file included in this repo.
-
-For more information, setup instructions for other dev clients, and to post comments and questions, visit our Learn MCP Server GitHub repo at [https://github.com/MicrosoftDocs/MCP](https://github.com/MicrosoftDocs/MCP). Find other MCP Servers to connect your agent to at [https://mcp.azure.com](https://mcp.azure.com).
-
-*Note: When you use the Learn MCP Server, you agree with [Microsoft Learn](https://learn.microsoft.com/en-us/legal/termsofuse) and [Microsoft API Terms](https://learn.microsoft.com/en-us/legal/microsoft-apis/terms-of-use) of Use.*
-
-## Content Owners
-
-<table>
-<tr>
-    <td align="center"><a href="http://github.com/sinedied">
-        <img src="https://github.com/sinedied.png" width="100px;" alt="Yohan Lasorsa"/><br />
-        <sub><b>Yohan Lasorsa</b></sub></a><br />
-            <a href="https://github.com/sinedied" title="talk">📢</a>
-    </td>
-</tr></table>
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit [Contributor License Agreements](https://cla.opensource.microsoft.com).
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
-trademarks or logos is subject to and must follow
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.

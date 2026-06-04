@@ -1,16 +1,10 @@
-@lab.Title
+
 
 # Get Started
 
 > [!TIP]
 > As you follow the instructions in this pane, whenever you see a +++icon+++, you can use it to copy text from the instruction pane into the virtual machine interface.
 
-## Sign into Windows
-
-In the virtual machine, sign into Windows using the following credentials:
-
-- Username: +++@lab.VirtualMachine(Win11-Pro-Base).Username+++
-- Password: +++@lab.VirtualMachine(Win11-Pro-Base).Password+++
 
 ## Lab Overview
 
@@ -32,5 +26,3 @@ Through the exercises, you'll explore how Contoso DIY:
 - Seeds the deployed app with realistic data and uses Microsoft Fabric intelligence, semantic models, and data agents to ask natural-language questions about operational data
 
 You'll walk in the Contoso DIY team's shoes to build, ship, evolve, and analyze a real enterprise app. The exercises are designed to be completed in order because each step builds on the app, data model, deployment, and resources created in the previous exercises, so make sure you complete each exercise before moving on to the next one.
-
-Select **Next →** to start the lab.
