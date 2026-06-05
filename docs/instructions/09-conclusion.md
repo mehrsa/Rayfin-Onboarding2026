@@ -11,4 +11,4 @@ In one lab session you just:
 
 No infrastructure scripts. No migration files written by hand. No bespoke auth plumbing. **From zero to a deployed, intelligent enterprise app — using a managed backend, decorators, and coding agents.**
 
-I hope you enjoyed the lab and are excited about the possibilities of building with Microsoft Fabric and Rayfin SDK. The tools and patterns you saw here are designed to help you build faster, smarter, and more maintainable applications on top of Microsoft Fabric's powerful data and AI capabilities.
+We hope you enjoyed the lab and are excited about the possibilities of building with Microsoft Fabric and Rayfin SDK. The tools and patterns you saw here are designed to help you build faster, smarter, and more maintainable applications on top of Microsoft Fabric's powerful data and AI capabilities.

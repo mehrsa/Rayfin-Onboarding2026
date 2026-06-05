@@ -179,4 +179,4 @@ After GitHub Copilot CLI applies a fix, repeat the relevant validation steps fro
 
 You have completed the feature implementation and validation workflow for the Field Services app.
 
-Continue with **Next →** to Seed Data for Analysis.
+Continue to the next exercise to Seed Data for Analysis.

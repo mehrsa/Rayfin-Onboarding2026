@@ -128,5 +128,3 @@ Use the agent's chat interface to ask questions about your seeded production dat
     You should see the response from copilot using the data agent as its knowledge source.
 
 You have successfully created a Fabric data agent over your production data and used it to answer natural-language questions.
-
-Continue with **Next →** for the conclusion of the lab and next steps.
