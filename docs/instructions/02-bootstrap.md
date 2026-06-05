@@ -10,27 +10,29 @@ The template handles the setup for you, so you can focus on the lab.
 
 ## Task 1: Bootstrap a new Rayfin project from the Field Services template
 
-1. From the open Windows Terminal, type/add the following command, but **do not press *Enter* yet**. Leave `<workspace-id>` in place for now.
+**This is the most important part of setting things up so please ensure you follow the instructions!** In the Terminal, type/add one of the following commands based on your Fabric environment, **replace** **< workspace-name >** with **exactly** the name of the workspace you chose in previous exercise (copy and paste it to be safe! it is case sensitive, no extra spaces, etc.)
 
-    ```shell
-    npm create -y @microsoft/rayfin@latest -- --project-name field-services-app --template "./template/field-services-app" --workspace-id <workspace-id>
-    ```
+If your workspace is in **MSIT**:
 
-1. Navigate back to your browser where you have the Microsoft Fabric portal open.
+```shell 
+npm create -y @microsoft/rayfin@latest -- --project-name field-services-app --template "./template/field-services-app" --workspace <workspace-name> --base-api-url https://msitapi.fabric.microsoft.com
+```
 
-2. In the left-hand navigation pane, select **Workspaces** and then select the workspace you just created in the previous exercise.
+If your workspace is in **DXT**:
 
-3. Once the workspace loads, copy the workspace ID from the URL in address bar. Workspace ID is the long string of characters (can't miss it!).
+```shell 
+npm create -y @microsoft/rayfin@latest -- --project-name field-services-app --template "./template/field-services-app" --workspace <workspace-name> --base-api-url https://dxtapi.fabric.microsoft.com
+```
 
-4. Return to the terminal. In the command you pasted, replace `<workspace-id>` with the id you just copied, then press **Enter** to bootstrap a new Rayfin project from the Field Services template.
 
-The CLI will then:
+After replacing with your workspace name in the URL, press enter, the CLI will then:
+
     - Create a new folder called **field-services-app** in your current directory.
     - Copy the template files into a new **field-services-app** folder.
     - Wire the project to your Fabric workspace using the `--workspace-id` you provided.
     - Run `npm install` in the new project folder to pull dependencies (this can take a couple of minutes on first run).
 
-1. While the install is running, you can open the `data` folder at **.\template\field-services-app** to see the original prompt and dataset used to generate this template. This will give you a better understanding of how the app was built and ideas on how to customize it later in the lab.
+While the install is running, you can open the `data` folder at **.\template\field-services-app** to see the original prompt and dataset used to generate this template. This will give you a better understanding of how the app was built and ideas on how to customize it later in the lab.
 
 ## Task 2: Explore the generated project and make your first commit
 
@@ -75,4 +77,4 @@ In this task, you will inspect the generated project, initialize a Git repositor
     git commit -m "Initial commit - bootstrap from template"
     ```
 
-Continue with **Next →** to explore the codebase.
+Continue to the next exercise to explore the codebase.

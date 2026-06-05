@@ -102,14 +102,6 @@ You do not need to understand the full frontend in this exercise.
     - If you change a field in **rayfin/data/**, TypeScript can help find frontend code that needs updating.
     - The app does not use a hand-written REST client.
 
----
 
-## Knowledge Check
 
-@lab.Activity(DataModelQuestion)
-
-@lab.Activity(ManagedServicesQuestion)
-
-If either question is unclear, review Task 2 and Task 3 before continuing.
-
-Continue with **Next →** to run the App locally.
+Continue to next exercise to run the App locally.
