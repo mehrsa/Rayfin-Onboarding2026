@@ -1,5 +1,9 @@
 
+## 🔥Ship full-stack apps fast with coding agents and a managed backend in Microsoft Fabric
 
+### Session Description
+
+Skip the infra plumbing and ship a real enterprise app. In this hands-on lab, build a work-order management app for Contoso DIY's new home services with Fabric Apps—a managed backend giving you database, auth and hosting out of the box. Start from a template, deploy to production in one command, then add features through the Copilot CLI without worrying about migrations. Finish by tapping into Fabric intelligence to turn app data into insights.
 ### 🏠 Getting started in your own environment
 
 If you're following these steps at your own pace:
