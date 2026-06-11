@@ -17,7 +17,8 @@ Ensure you have below:
 |---|---|
 | [VS Code](https://code.visualstudio.com/) | Recommended; tested environment |
 | Latest Node.js|Windows: ```winget install -e --id OpenJS.NodeJS.LTS``` , macOS:  ```brew install node@lts```|
-| GitHub CLI| Windows: ```winget install --id GitHub.cli -e``` , macOS: ```brew install gh```|
+| GitHub Copilot CLI| Windows: ```winget install GitHub.Copilot``` , macOS: ```brew install copilot-cli```|
+|Azure CLI|Windows: ```winget install -e --id Microsoft.AzureCLI```, macOS: ```brew install azure-cli``` |
 
 
 ## Clone this repo
